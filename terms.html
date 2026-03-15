@@ -4,162 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Existence - Not Gone Today</title>
-    <meta name="description" content="Not Gone Today Terms of Existence - The fine print for staying alive (or not)">
+    <meta name="description" content="Not Gone Today terms of service for safety check-ins and emergency notification features.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="assets/icon/app_icon.png">
-    <style>
-        .terms-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 120px 20px 80px;
-        }
-        
-        .terms-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .terms-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 1rem;
-        }
-        
-        .terms-subtitle {
-            font-size: 1.1rem;
-            color: #64748b;
-        }
-        
-        .terms-content {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            line-height: 1.8;
-        }
-        
-        .terms-section {
-            margin-bottom: 2.5rem;
-        }
-        
-        .terms-section h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #f1f5f9;
-        }
-        
-        .terms-section h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #334155;
-            margin: 1.5rem 0 0.5rem;
-        }
-        
-        .terms-section p {
-            margin-bottom: 1rem;
-            color: #475569;
-        }
-        
-        .terms-section ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-        
-        .terms-section li {
-            margin-bottom: 0.5rem;
-            color: #475569;
-        }
-        
-        .warning-box {
-            background-color: #fff1f2;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid #ef4444;
-            margin: 1.5rem 0;
-        }
-        
-        .info-box {
-            background-color: #f0fdf4;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid #10b981;
-            margin: 1.5rem 0;
-        }
-        
-        .contact-info {
-            background-color: #f8fafc;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #10b981;
-            margin: 2rem 0;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-top: 2rem;
-            color: #10b981;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            .terms-container {
-                padding: 100px 15px 60px;
-            }
-            
-            .terms-content {
-                padding: 2rem;
-            }
-            
-            .terms-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="assets/icon/app_icon.png" alt="Not Gone Today" class="logo-img">
-                <span class="logo-text">Not Gone Today</span>
-            </div>
-            <div class="nav-menu">
+    <header class="navbar">
+        <div class="container nav-container">
+            <a class="brand" href="index.html">Not Gone Today</a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="index.html#features" class="nav-link">Features</a>
-                <a href="index.html#download" class="nav-link">Download</a>
                 <a href="privacy.html" class="nav-link">Privacy</a>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <div class="terms-container">
-        <div class="terms-header">
-            <h1 class="terms-title">Terms of Existence</h1>
-            <p class="terms-subtitle">Last Updated: January 2026 — Stay Fresh</p>
+    <main class="policy-page">
+        <div class="container policy-header">
+            <h1>Terms of Existence</h1>
+            <p>Last Updated: January 2026</p>
         </div>
 
-        <div class="terms-content">
-            <div class="terms-section">
+        <div class="container policy-content">
+            <section class="policy-section">
                 <h2>1. Acceptance of Fate</h2>
                 <p>
                     Welcome to Not Gone Today! By using this app, you acknowledge that you are indeed alive (for now) and agree to be bound by these terms. If you don't agree, please delete the app and maybe hire a full-time butler to poke you every morning.
                 </p>
-            </div>
+            </section>
 
-            <div class="terms-section">
+            <section class="policy-section">
                 <h2>2. What We Actually Do</h2>
                 <p>Not Gone Today provides a suite of survival-themed tools for the modern hermit:</p>
                 <ul>
@@ -168,12 +46,12 @@
                     <li>Retrieval Squad formation (syncing your check-in status with your friends).</li>
                     <li>Friendly "Pokes" to make sure your squad isn't turning into ghosts.</li>
                 </ul>
-                <div class="info-box">
+                <div class="notice-box">
                     <p><strong>Our Data Usage:</strong> To provide these features, we collect essential data including your <strong>Device ID</strong>, your <strong>latest check-in time</strong>, and your <strong>latest check-in photo</strong>. This information is shared with your "Retrieval Squad" and "Chosen One" so they can verify your safety.</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="terms-section">
+            <section class="policy-section">
                 <h2>3. Your Survival Responsibilities</h2>
                 <p>To avoid false alarms or becoming a permanent fixture, you agree to:</p>
                 <ul>
@@ -183,11 +61,11 @@
                     <li><strong>Stay active: If you fail to check in for 20 consecutive days, your account will be automatically terminated/deregistered.</strong></li>
                     <li>Acknowledge that we are a dark humor app, not a 24/7 tactical rescue team.</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="terms-section">
+            <section class="policy-section">
                 <h2>4. Don't Be a Ghost (Literally and Figuratively)</h2>
-                <div class="warning-box">
+                <div class="notice-box notice-box-warning">
                     <p><strong>The following activities are strictly prohibited:</strong></p>
                     <ul>
                         <li>Trying to hack our code to live forever.</li>
@@ -195,43 +73,55 @@
                         <li>Spamming your squad with pokes until they wish they were ghosts.</li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
-            <div class="terms-section">
+            <section class="policy-section">
                 <h2>5. The Reality Check</h2>
-                <div class="info-box">
+                <div class="notice-box">
                     <p><strong>Special Notice:</strong></p>
                     <p>Not Gone Today is a dark humor tool. We cannot guarantee 100% notification delivery because the internet, like life, is unpredictable. In case of actual trouble, call the real authorities. We are not liable for you becoming a skeleton because your Chosen One has a really aggressive spam filter.</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="terms-section">
+            <section class="policy-section">
                 <h2>6. Ownership of Your Soul (and Code)</h2>
                 <p>All design, code, and irony within this app are owned by us. You just get to use it until your survival streak ends.</p>
-                <div class="info-box">
+                <div class="notice-box">
                     <p><strong>Your Data, Your Ownership:</strong> You own the data you provide. We only use it to facilitate the app's survival features. When you're gone from the app, your data follows suit (after 20 days of silence).</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="terms-section">
+            <section class="policy-section">
                 <h2>7. Changing the Deal</h2>
                 <p>We might change these terms. If we do, we'll try to tell you before you're gone. Continued use means you still agree to the irony.</p>
-            </div>
+            </section>
 
-            <div class="terms-section">
+            <section class="policy-section">
                 <h2>8. Talk to Us</h2>
-                <div class="contact-info">
+                <div class="notice-box">
                     <p>If you're still confused or want to say hi before the end, contact us at:</p>
                     <ul>
-                        <li>Email: xiongsl2013@gmail.com</li>
+                        <li>Email: wangying245028@gmail.com</li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
-            <a href="index.html" class="back-link">← Back to the World of the Living</a>
+            <a href="index.html" class="back-link">← Back to Home</a>
         </div>
-    </div>
+    </main>
 
+    <footer class="footer footer-simple">
+        <div class="container footer-content">
+            <div>
+                <p class="footer-brand">Not Gone Today</p>
+                <p class="footer-copy">Safety check-ins for independent living.</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:wangying245028@gmail.com">wangying245028@gmail.com</a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

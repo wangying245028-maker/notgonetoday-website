@@ -4,175 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Gone Today - Safety Check-in for Solo Living</title>
-    <meta name="description" content="Not Gone Today is a dark humor safety check-in tool. If you stop checking in, we'll make sure someone finds you before you become a permanent part of the furniture.">
-    <meta name="keywords" content="solo living safety, dark humor, Not Gone Today, check-in, retrieval squad, afk in real life">
+    <meta name="description" content="Not Gone Today helps people living alone check in daily and keep trusted contacts informed if something feels wrong.">
+    <meta name="keywords" content="Not Gone Today, solo living safety, check-in, emergency contact, guardian circle">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="assets/icon/app_icon.png">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="assets/icon/app_icon.png" alt="Not Gone Today" class="logo-img">
-                <span class="logo-text">Not Gone Today</span>
-            </div>
-            <div class="nav-menu">
+    <header class="navbar">
+        <div class="container nav-container">
+            <a class="brand" href="index.html">Not Gone Today</a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <nav class="nav-menu">
                 <a href="#features" class="nav-link">Features</a>
-                <a href="#download" class="nav-link">Download</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
                 <a href="privacy.html" class="nav-link">Privacy</a>
                 <a href="terms.html" class="nav-link">Terms</a>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <h1 class="hero-title">Not Gone Today</h1>
-            <p class="hero-subtitle">"Still alive? Prove it." — Your ultimate body retrieval squad</p>
-            <p class="hero-description">
-                A self-deprecating safety net for the solo legends. Check in once a day to confirm you're still fresh. 
-                If you miss a check-in, we'll notify your "Chosen One" to come check if you've finally joined the afterlife.
-                Because nobody wants to be found by the smell.
-            </p>
-            <div class="hero-buttons">
-                <a href="#download" class="btn btn-primary">Start Surviving</a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Features -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Survival Features</h2>
-            <p class="section-subtitle">Simple design, ironic protection</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">One-Tap Survival</h3>
-                    <p class="feature-description">
-                        Just one tap a day to prove to the world (and your retrieval specialist) that you're still kicking. Minimal effort for maximum peace of mind.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                            <circle cx="12" cy="13" r="4"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Visual Proof</h3>
-                    <p class="feature-description">
-                        Check in with a photo to give your friends absolute peace of mind. We only keep your latest photo to protect your privacy while proving you're still active.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">AFK Alert</h3>
-                    <p class="feature-description">
-                        Set your custom timeout and leave a personalized message. If you go quiet, we'll email your emergency contact with your last known status.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Retrieval Squad</h3>
-                    <p class="feature-description">
-                        Invite friends to your squad. Watch over each other's "freshness" and reach out if someone starts looking a bit suspiciously quiet.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">The Poke</h3>
-                    <p class="feature-description">
-                        Notice a squad member forgot to check in? Send them a "Poke" to confirm they're busy and haven't just become a ghost.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="download">
-        <div class="container">
-            <h2 class="section-title">Join the Squad Today</h2>
-            <p class="section-subtitle">Sync your survival across all platforms</p>
-            
-            <div class="download-grid">
-                <div class="download-card">
-                    <div class="download-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 19V5M5 12l7-7 7 7"/>
-                        </svg>
-                    </div>
-                    <h3>App Store</h3>
-                    <p>For iPhone and iPad</p>
-                    <a href="#" class="btn btn-primary">Download</a>
-                </div>
-
-                <div class="download-card">
-                    <div class="download-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                            <line x1="12" y1="18" x2="12.01" y2="18"/>
-                        </svg>
-                    </div>
-                    <h3>Google Play</h3>
-                    <p>For Android Smartphones</p>
-                    <a href="#" class="btn btn-primary">Download</a>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="hero-badge">Daily Safety Check-in</span>
+                <h1>Not Gone Today</h1>
+                <p class="hero-lead">A calm, reliable safety companion for people living alone.</p>
+                <p class="hero-text">
+                    Check in once per day. If you miss your check-in window, your chosen contact can be notified with your latest status message.
+                    Built to keep safety simple, private, and consistent.
+                </p>
+                <div class="hero-actions">
+                    <a href="#features" class="btn btn-primary">View Features</a>
+                    <a href="privacy.html" class="btn btn-secondary">Privacy Policy</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title">Core Features</h2>
+                <p class="section-subtitle">Designed around low friction and clear accountability.</p>
+                <div class="feature-grid">
+                    <article class="card">
+                        <h3>One-Tap Check-in</h3>
+                        <p>Daily confirmation is fast and repeatable, so you can maintain your routine without extra effort.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Trusted Circle</h3>
+                        <p>Connect with people you trust so your status can be seen by the right people at the right time.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Timeout Alerts</h3>
+                        <p>Set your own reminder window and define what happens if a check-in is missed.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Latest Status Snapshot</h3>
+                        <p>Store the latest check-in state to provide current context without accumulating unnecessary history.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section section-muted">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-index">01</span>
+                        <p>Choose your check-in timeout and emergency contact.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-index">02</span>
+                        <p>Check in daily with one tap to confirm you are safe.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-index">03</span>
+                        <p>If a check-in is missed, your chosen contact can be alerted.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/icon/app_icon.png" alt="Not Gone Today" class="logo-img">
-                    <span class="logo-text">Not Gone Today</span>
-                </div>
-                <div class="footer-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="mailto:xiongsl2013@gmail.com">Contact Us</a>
-                </div>
+        <div class="container footer-content">
+            <div>
+                <p class="footer-brand">Not Gone Today</p>
+                <p class="footer-copy">Keep safety visible, simple, and respectful.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Not Gone Today. All rights reserved. Keep on breathing.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:wangying245028@gmail.com">wangying245028@gmail.com</a>
             </div>
         </div>
     </footer>

@@ -4,156 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy of the Living - Not Gone Today</title>
-    <meta name="description" content="Not Gone Today Privacy Policy - How we keep your secrets while you're still alive">
+    <meta name="description" content="Not Gone Today privacy policy. Learn what data we collect and how it is used for safety check-ins.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="assets/icon/app_icon.png">
-    <style>
-        .privacy-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 120px 20px 80px;
-        }
-        
-        .privacy-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .privacy-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 1rem;
-        }
-        
-        .privacy-subtitle {
-            font-size: 1.1rem;
-            color: #64748b;
-        }
-        
-        .privacy-content {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            line-height: 1.8;
-        }
-        
-        .privacy-section {
-            margin-bottom: 2.5rem;
-        }
-        
-        .privacy-section h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #f1f5f9;
-        }
-        
-        .privacy-section h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #334155;
-            margin: 1.5rem 0 0.5rem;
-        }
-        
-        .privacy-section p {
-            margin-bottom: 1rem;
-            color: #475569;
-        }
-        
-        .privacy-section ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-        
-        .privacy-section li {
-            margin-bottom: 0.5rem;
-            color: #475569;
-        }
-        
-        .highlight {
-            background-color: #ecfdf5;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid #10b981;
-            margin: 1.5rem 0;
-        }
-        
-        .contact-info {
-            background-color: #f8fafc;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #10b981;
-            margin: 2rem 0;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-top: 2rem;
-            color: #10b981;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            .privacy-container {
-                padding: 100px 15px 60px;
-            }
-            
-            .privacy-content {
-                padding: 2rem;
-            }
-            
-            .privacy-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="assets/icon/app_icon.png" alt="Not Gone Today" class="logo-img">
-                <span class="logo-text">Not Gone Today</span>
-            </div>
-            <div class="nav-menu">
+    <header class="navbar">
+        <div class="container nav-container">
+            <a class="brand" href="index.html">Not Gone Today</a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+            <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="index.html#features" class="nav-link">Features</a>
-                <a href="index.html#download" class="nav-link">Download</a>
                 <a href="terms.html" class="nav-link">Terms</a>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <div class="privacy-container">
-        <div class="privacy-header">
-            <h1 class="privacy-title">Privacy of the Living</h1>
-            <p class="privacy-subtitle">Last Updated: January 2026 — Transparency for your survival</p>
+    <main class="policy-page">
+        <div class="container policy-header">
+            <h1>Privacy of the Living</h1>
+            <p>Last Updated: January 2026</p>
         </div>
 
-        <div class="privacy-content">
-            <div class="privacy-section">
+        <div class="container policy-content">
+            <section class="policy-section">
                 <h2>1. Introduction</h2>
                 <p>
                     Welcome to Not Gone Today! We handle your data with one goal in mind: making sure someone knows if you've stopped checking in. This policy explains exactly what we collect and how we use it to keep you connected to the world of the living.
                 </p>
-            </div>
+            </section>
 
-            <div class="privacy-section">
+            <section class="policy-section">
                 <h2>2. What We Collect</h2>
-                <div class="highlight">
+                <div class="notice-box">
                     <p>To implement friend sharing and emergency notification features, we collect the following information:</p>
                     <ul>
                         <li><strong>Device ID:</strong> Used as your unique identifier to manage your status and connections without requiring personal account information.</li>
@@ -163,43 +49,55 @@
                     </ul>
                 </div>
                 <p>This data is used exclusively for friend information sharing and automated emergency emails.</p>
-            </div>
+            </section>
 
-            <div class="privacy-section">
+            <section class="policy-section">
                 <h2>3. How Your Data is Handled</h2>
                 <ul>
                     <li><strong>Server-Side Upload:</strong> The information listed above is uploaded to our server to facilitate real-time status updates for your retrieval squad and to trigger automated alerts.</li>
                     <li><strong>No Monetization:</strong> We <strong>DO NOT</strong> sell, share, or monetize your data with third parties or advertisers.</li>
                     <li><strong>No Invasive Tracking:</strong> We <strong>DO NOT</strong> track your real-time GPS location or raid your contact list.</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="privacy-section">
+            <section class="policy-section">
                 <h2>4. Data Storage & Retention</h2>
                 
                 <h3>4.1 Overwrite Policy</h3>
                 <p>We believe in minimal storage. Your check-in history is not archived; each new check-in (time and photo) overwrites the previous one on our server.</p>
 
                 <h3>4.2 Auto-Deletion Policy</h3>
-                <div class="highlight">
+                <div class="notice-box">
                     <strong>Freshness Guarantee:</strong> If you fail to check in for <strong>20 consecutive days</strong>, our system will automatically delete all of your server-side data. If you've truly gone AFK from life, your digital footprint with us disappears.
                 </div>
-            </div>
+            </section>
 
-            <div class="privacy-section">
+            <section class="policy-section">
                 <h2>5. Final Words</h2>
-                <div class="contact-info">
+                <div class="notice-box">
                     <p>If you have questions about your privacy or how your data is handled:</p>
                     <ul>
-                        <li>Email: xiongsl2013@gmail.com</li>
+                        <li>Email: wangying245028@gmail.com</li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
-            <a href="index.html" class="back-link">← Back to the World of the Living</a>
+            <a href="index.html" class="back-link">← Back to Home</a>
         </div>
-    </div>
+    </main>
 
+    <footer class="footer footer-simple">
+        <div class="container footer-content">
+            <div>
+                <p class="footer-brand">Not Gone Today</p>
+                <p class="footer-copy">Safety check-ins for independent living.</p>
+            </div>
+            <div class="footer-links">
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:wangying245028@gmail.com">wangying245028@gmail.com</a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
