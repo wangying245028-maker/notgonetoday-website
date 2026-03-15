@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 position: absolute;
                 width: 2px;
                 height: 2px;
-                background: linear-gradient(45deg, #3296ff, #00f2fe);
+                background: linear-gradient(45deg, #10B981, #34D399);
                 border-radius: 50%;
                 opacity: 0.6;
                 animation: matrixRain ${Math.random() * 10 + 10}s linear infinite;
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: fixed;
             width: 20px;
             height: 20px;
-            border: 2px solid rgba(50, 150, 255, 0.5);
+            border: 2px solid rgba(16, 185, 129, 0.5);
             border-radius: 50%;
             pointer-events: none;
             z-index: 9999;
@@ -202,12 +202,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // 鼠标悬停时放大光标
         document.addEventListener('mouseenter', function() {
             cursor.style.transform = 'scale(1.5)';
-            cursor.style.borderColor = 'rgba(0, 242, 254, 0.8)';
+            cursor.style.borderColor = 'rgba(52, 211, 153, 0.8)';
         });
         
         document.addEventListener('mouseleave', function() {
             cursor.style.transform = 'scale(1)';
-            cursor.style.borderColor = 'rgba(50, 150, 255, 0.5)';
+            cursor.style.borderColor = 'rgba(16, 185, 129, 0.5)';
         });
     }
     

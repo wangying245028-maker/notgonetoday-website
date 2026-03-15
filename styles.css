@@ -6,23 +6,27 @@
 }
 
 :root {
-    /* 现代化配色方案 */
-    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    /* Are you dead? 绿色主题配色 */
+    --primary-color: #10B981;
+    --primary-dark: #059669;
+    --primary-light: #34D399;
+    --primary-gradient: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    --secondary-gradient: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+    --accent-gradient: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    --danger-gradient: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    --dark-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
     --glass-bg: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
-    --text-primary: #1a202c;
-    --text-secondary: #4a5568;
-    --text-muted: #718096;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
     --bg-primary: #ffffff;
-    --bg-secondary: #f7fafc;
-    --bg-dark: #1a202c;
+    --bg-secondary: #f8fafc;
+    --bg-dark: #0f172a;
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
-    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(16, 185, 129, 0.1);
+    --shadow-lg: 0 10px 25px rgba(16, 185, 129, 0.15);
+    --shadow-xl: 0 20px 40px rgba(16, 185, 129, 0.2);
     --border-radius: 16px;
     --border-radius-sm: 8px;
     --border-radius-lg: 24px;
@@ -124,8 +128,8 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--text-primary);
-    background: rgba(102, 126, 234, 0.1);
+    color: var(--primary-color);
+    background: rgba(16, 185, 129, 0.1);
     transform: translateY(-2px);
 }
 
@@ -149,7 +153,7 @@ body {
 .hero {
     padding: 140px 0 100px;
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #10B981 0%, #059669 50%, #34D399 100%);
     color: white;
     position: relative;
     overflow: hidden;
@@ -162,7 +166,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="ai-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="2" fill="rgba(102,126,234,0.1)"/><circle cx="10" cy="10" r="1" fill="rgba(240,147,251,0.1)"/><circle cx="40" cy="15" r="1.5" fill="rgba(79,172,254,0.1)"/><circle cx="15" cy="40" r="1" fill="rgba(102,126,234,0.1)"/><circle cx="35" cy="35" r="0.5" fill="rgba(240,147,251,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23ai-pattern)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="ai-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="15" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="15" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="35" cy="35" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23ai-pattern)"/></svg>');
     opacity: 0.4;
     animation: neuralNetwork 15s ease-in-out infinite;
 }
@@ -174,7 +178,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(102, 126, 234, 0.1) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
     animation: dataFlow 8s ease-in-out infinite;
     pointer-events: none;
 }
@@ -271,7 +275,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(240, 147, 251, 0.1));
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(52, 211, 153, 0.1));
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: var(--border-radius);
@@ -294,7 +298,7 @@ body {
 .btn-primary:hover {
     transform: translateY(-4px) scale(1.02);
     box-shadow: var(--shadow-xl);
-    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    background: linear-gradient(135deg, #065F46 0%, #064E3B 100%);
 }
 
 .btn-secondary {
@@ -325,7 +329,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(102,126,234,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(16,185,129,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
     opacity: 0.5;
 }
 
@@ -770,10 +774,10 @@ html {
 
 @keyframes aiGlow {
     0%, 100% {
-        box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
     }
     50% {
-        box-shadow: 0 0 40px rgba(102, 126, 234, 0.6), 0 0 60px rgba(240, 147, 251, 0.3);
+        box-shadow: 0 0 40px rgba(16, 185, 129, 0.6), 0 0 60px rgba(52, 211, 153, 0.3);
     }
 }
 
